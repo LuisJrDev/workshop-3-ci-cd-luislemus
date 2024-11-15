@@ -47,7 +47,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: ${{ secrets.AWS_REGION }}
         run: |
-          aws lambda update-function-code --function-name YourLambdaFunctionName --zip-file fileb://function.zip
+          aws lambda update-function-code --function-name api-workshop-3-luislemus --zip-file fileb://function.zip
 
   notify_failure:
     runs-on: ubuntu-latest
