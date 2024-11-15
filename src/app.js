@@ -3,7 +3,7 @@ const app = express();
 // Middleware para parsear JSON
 app.use(express.json());
 app.get('/', (req, res) => {
- res.statu(200).send('Bienvenido a la API');
+ res.status(200).send('Bienvenido a la API');
 });
 
 app.get('/status', (req, res) => {
