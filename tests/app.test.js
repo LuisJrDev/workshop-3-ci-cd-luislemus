@@ -9,6 +9,6 @@ describe('API Endpoints', () => {
  it('should return the status', async () => {
    const res = await request(app).get('/status');
    expect(res.statusCode).toEqual(200);
-   expect(res.body).toEqual({ status: 'API funcionando correctamente' });
+   expect(res.body).toEqual({ statu: 'API funcionando correctamente' });
  });
 });
